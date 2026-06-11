@@ -1,38 +1,41 @@
-# front-end-exam
-
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Recommended Browser Setup
-
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
+Front-end Exam Project
+Project
+This project was created for the Front-end Development exam using Vue 3, Vite, Vue Router, SCSS, and Bootstrap.
+The website contains multiple pages:
+Home
+Products
+About
+Contact
+It also includes:
+Responsive Design
+Semantic HTML
+SEO improvements
+Vue Components
+Vue Router navigation
+Requirements
+Make sure Node.js and npm are installed on your computer.
+Installation
+Open the project folder in Visual Studio Code and run:
+Bash
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
+Run the project
+Start the development server:
+Bash
 npm run dev
-```
+Then open the local URL shown in the terminal (for example):
 
-### Compile and Minify for Production
-
-```sh
+http://localhost:5173
+Build for production
+Bash
 npm run build
-```
+Technologies Used
+Vue 3
+Vite
+Vue Router
+SCSS
+Bootstrap
+Git statement:
+git init
+git add 
+git commit -m "massege"
+git push
