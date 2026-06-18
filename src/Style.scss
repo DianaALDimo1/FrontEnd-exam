@@ -1,0 +1,151 @@
+/* 1. تعريف الألوان الأساسية للصالون لسهولة الاستخدام */
+$bg-dark: #121212;       /* لون خلفية الصفحة (رمادي داكن جداً) */
+$bg-black: #000000;      /* لون خلفية الفورم (أسود فخم) */
+$gold-primary: #D4AF37;  /* اللون الذهبي لصالون Barberitos */
+$text-light: #f4f4f4;    /* لون النصوص الفاتحة */
+$text-muted: #a0a0a0;    /* لون النصوص الرمادية الفرعية */
+$border-color: #333333;  /* لون الحدود الرمادية */
+
+/* 2. تنسيق القسم العام المحيط بالفورم */
+.contact-section {
+  background-color: $bg-dark;
+  color: $text-light;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+/* 3. تنسيق الصندوق الأسود (الحاوية) الذي يحتوي على الفورم */
+.contact-container {
+  max-width: 600px;
+  width: 100%;
+  background-color: $bg-black;
+  padding: 40px;
+  border-radius: 12px;
+  border: 1px solid $border-color;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* 4. تنسيق العناوين */
+.contact-title {
+  color: $gold-primary;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contact-subtitle {
+  color: $text-muted;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
+/* 5. تنسيق المجموعات والحقول (Labels & Inputs) */
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: $text-light;
+}
+
+/* التنسيق الموحد لجميع حقول الإدخال (الاسم، الإيميل، الرسالة) */
+.form-control {
+  width: 100%;
+  background-color: #1a1a1a;
+  color: $text-light;
+  border: 1px solid $border-color;
+  padding: 12px 15px;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-sizing: border-box; /* لضمان عدم خروج الحقول عن الصندوق */
+}
+
+/* تأثير جميل عند الضغط داخل أي حقل ليتحول باللون الذهبي */
+.form-control:focus {
+  outline: none;
+  border-color: $gold-primary;
+  box-shadow: 0 0 8px rgba($gold-primary, 0.25);
+}
+
+/* 6. تنسيق زر الإرسال الذهبي الفخم */
+.btn-submit {
+  width: 100%;
+  background-color: $gold-primary;
+  color: $bg-black;
+  border: none;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+/* تأثير حركة الزر عند تمرير الماوس فوقه (Hover) */
+.btn-submit:hover {
+  background-color: #bfa030;
+  transform: translateY(-2px); /* يرتفع للأعلى قليلاً */
+  box-shadow: 0 5px 15px rgba($gold-primary, 0.3);
+}
+
+/* 7. لجعل التصميم متجاوباً تماماً مع شاشات الموبايل (Responsiveness) */
+@media (max-width: 576px) {
+  .contact-section {
+    padding: 40px 15px;
+  }
+  .contact-container {
+    padding: 20px;
+  }
+  .contact-title {
+    font-size: 26px;
+  }
+}
+زcontact-section { min-height: 85vh; display: flex; align-items: center; }
+.bg-black { background-color: #000000 !important; }
+.form-control:focus, .form-select:focus {
+  background-color: #1a1a1a !important;
+  color: #fff !important;
+  border-color: #D4AF37 !important;
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.25) !important;
+}
+.custom-checkbox { cursor: pointer; }
+.custom-checkbox:checked { background-color: #D4AF37 !important; border-color: #D4AF37 !important; }
+.cursor-pointer { cursor: pointer; }
+.cursor-pointer:hover { color: #fff !important; }
+.carousel-img { 
+  height: 420px; 
+  object-fit: cover; 
+  filter: brightness(50%); 
+}
+.style-caption { 
+  bottom: 10%; 
+}
+.animated-title { 
+  animation: slideInText 0.6s ease-out forwards; 
+}
+@keyframes slideInText { 
+  from { opacity: 0; transform: translateY(15px); } 
+  to { opacity: 1; transform: translateY(0); } 
+}
+
+/* تصغير الحجم أكثر على الموبايل ليتناسب مع شاشة الهاتف */
+@media (max-width: 767.98px) { 
+  .carousel-img { 
+    height: 260px; 
+  } 
+  .style-caption { 
+    bottom: 5%; 
+    padding: 8px !important; 
+    width: 90% !important;
+  } 
+}
